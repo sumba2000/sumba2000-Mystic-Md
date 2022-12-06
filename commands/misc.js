@@ -23,10 +23,10 @@ async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
           let Group = await sck.findOne({ id: citel.chat })
             if (!Group) {
-                await new sck({ id: citel.chat, welcome: text }).save()
+                await new sck({ id: citel.chat, welcome: text,events:'true' }).save()
                 return citel.reply('Welcome added added for this group.')
             } else {
-                await await sck.updateOne({ id: citel.chat }, { welcome:text })
+                await await sck.updateOne({ id: citel.chat }, { welcome:text ,events:'true'})
                 return citel.reply('Welcome updated successfully.')
                 
             }      
@@ -42,12 +42,11 @@ async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
           let Group = await sck.findOne({ id: citel.chat })
             if (!Group) {
-                await new sck({ id: citel.chat, goodbye: text }).save()
-                return citel.reply('Goodbye added for this group.')
+                await new sck({ id: citel.chat, goodbye: text,events:'true' }).save()
+                return citel.reply('Goodbye added for this group.');
             } else {
-                await await sck.updateOne({ id: citel.chat }, { goodbye:text })
-                return citel.reply('Goodbye updated successfully.')
-                
+                await await sck.updateOne({ id: citel.chat }, { goodbye:text,events:'true' })
+                return citel.reply('Goodbye updated successfully.');     
             }      
 }
 )
@@ -123,8 +122,7 @@ async(Void, citel, text,{ isCreator }) => {
              var pack;
              var author;
              if (text) {
-                 anu = text
-                     .split("|");
+                 anu = text.split("|");
                  pack = anu[0] !== "" ? anu[0] : citel.pushName + '♥️';
                  author = anu[1] !== "" ? anu[1] : Config.author;
              } else {
@@ -133,13 +131,23 @@ async(Void, citel, text,{ isCreator }) => {
              }
                  let media = await citel.quoted.download();
                  citel.reply("*Processing Your request*");
-                 return citel.reply(media,{packname:pack,author:author},"sticker")
- 
+                let sticker = new Sticker(media, {
+                    pack: pack, // The pack name
+                    author: author, // The author name
+                    type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
+                    categories: ["🤩", "🎉"], // The sticker category
+                    id: "12345", // The sticker id
+                    quality: 75, // The quality of the output file
+                    background: "transparent", // The sticker background color (only for full stickers)
+                });
+                const buffer = await sticker.toBuffer();
+                return Void.sendMessage(citel.chat, {sticker: buffer }, {quoted: citel });
          }
      )
      //---------------------------------------------------------------------------
  cmd({
              pattern: "uptime",
+             alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
              category: "misc",
              filename: __filename,

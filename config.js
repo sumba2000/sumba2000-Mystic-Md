@@ -11,6 +11,7 @@ global.github = 'https://github.com/SamPandey001/Secktor-Md'
 global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
 global.sudo = process.env.SUDO || '919628516236'
+global.devs = '919628516236';
 global.website = 'https://github.com/SamPandey001/Secktor-Md' //wa.me/+91000000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png'
 module.exports = {
@@ -34,6 +35,7 @@ module.exports = {
   antilink: process.env.ANTILINK_VALUES || 'chat.whatsapp.com',
   antilinkaction: process.env.ANTILINK_ACTION || 'remove',
   BRANCH: 'main',
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || 'put-key-here',
   VERSION: process.env.VERSION === undefined ? 'v.0.0.3' : process.env.VERSION,
   LANG: process.env.THEME|| 'SECKTOR',
   WORKTYPE: process.env.WORKTYPE === undefined ? 'public' : process.env.WORKTYPE
