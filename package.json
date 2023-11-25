@@ -1,7 +1,7 @@
 {
-               "name": "Secktor-Md",
+               "name": "Mystic-Md",
                "version": "0.0.6",
-               "description": "Multi device whatsapp bot by SamPandey001.",
+               "description": "Multi device whatsapp bot by Mystic Man.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
@@ -62,10 +62,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/SamPandey001/Secktor-Md.git"
+                 "url": "git+https://github.com/sumba2000/sumba2000-Secktor-Md.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/SamPandey001/Secktor-Md/issues"
+                 "url": "https://github.com/sumba2000/sumba2000-Secktor-Md/issues"
                   },
-                 "homepage": "https://github.com/SamPandey001/Secktor-Md#readme"
+                 "homepage": "https://github.com/sumba2000/sumba2000-Secktor-Md#readme"
                   }
