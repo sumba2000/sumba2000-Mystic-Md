@@ -1,14 +1,14 @@
   
 <p align="center">  
   <a href="https://citel.vercel.app/">
-    <img alt="secktor docs" height="300" src="https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png">
-    <h1 align="center">Secktor MD Whatsapp bot</h1>
+    <img alt="mystic docs" height="300" src="https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png">
+    <h1 align="center">Mystic MD Whatsapp bot</h1>
   </a>
 </p>
    
 <p align="center">
 
-  <a aria-label="Join our chats" href="https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbCl" target="_blank">
+  <a aria-label="Join our chats" href="https://chat.whatsapp.com/" target="_blank">
     <img alt="whatsapp" src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
  
