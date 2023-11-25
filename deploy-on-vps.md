@@ -25,7 +25,7 @@
 
    5. Clone Repo and install required packages
       ```
-      git clone https://github.com/SamPandey001/Secktor-Md
+      git clone https://github.com/sumba2000/sumba2000-Secktor-Md
       cd Secktor-Md
       yarn install --network-concurrency 1
       ```
@@ -38,14 +38,14 @@
       copy paste lines below.
 
       ```
-      OWNER_NUMBER="911234567890"
+      OWNER_NUMBER="254114140048"
       MONGODB_URI="mongodb+srv://*************"
-      SESSION_ID = "secktorbot.herokuapp.com/session"
-      THUMB_IMAGE = "https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png"
+      SESSION_ID = "mysticbot.herokuapp.com/session"
+      THUMB_IMAGE = "https://user-images.githubusercontent.com/99327602/198687429-7ad69879-6029-4da6-90cd-9d39acfc31d9.jpg"
       port = 5000
-      email = "sam@secktor.live"
+      email = "projectbriansumba@gmail.com"
       global_url = "instagram.com"
-      OWNER_NAME = "SamPandey001"
+      OWNER_NAME = "MysticMan"
       AUTO_REACTION = false
       FAKE_COUNTRY_CODE = 92
       READ_MESSAGE = false
@@ -57,7 +57,7 @@
       WELCOME_MESSAGE =  "*Hi,* @user \n*Welcome in* @gname \n*Member count* : @count th"
       THEME= SECKTOR
       WORKTYPE = public
-      PACK_INFO = "Sam;Pandey"
+      PACK_INFO = "Mystic;Man"
       ANTILINK_VALUES = "chat.whatsapp.com"
       
       ```
