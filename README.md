@@ -1,7 +1,7 @@
   
 <p align="center">  
   <a href="https://citel.vercel.app/">
-    <img alt="mystic docs" height="300" src="https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png">
+    <img alt="mystic docs" height="300" src="https://user-images.githubusercontent.com/99327602/198687429-7ad69879-6029-4da6-90cd-9d39acfc31d9.jpg">
     <h1 align="center">Mystic MD Whatsapp bot</h1>
   </a>
 </p>
